@@ -26,6 +26,16 @@
     cursor: pointer;
     transform: scale(1);
     animation: pulse-black 2s infinite;
+
+    i {
+      font-size: 32px;
+      width: 32px;
+      height: 32px;
+      color: $color-white;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
   }
 
   &__side {
@@ -73,18 +83,21 @@
 
 @keyframes pulse-black {
   0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    transform: scale(0.98);
+    box-shadow: 0 0 0 0 $color-highlight;
+  }
+
+  50% {
   }
 
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 10px $color-highlight;
   }
 
   100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(0.98);
+    box-shadow: 0 0 0 0 $color-highlight;
   }
 }
 
@@ -99,6 +112,19 @@
 
 .landing-block {
   max-width: 640px;
+
+  &__item {
+    gap: 8px;
+  }
+
+  &__icon {
+    color: $color-white;
+    font-size: 16px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
 
 .email-link,

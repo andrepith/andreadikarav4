@@ -23,16 +23,16 @@ const LandingTop = ({
             Engineer from {nationality}.
           </h1>
           <p className="mt-4">{aboutMe}</p>
-          <div className="d-flex mt-4">
-            <div>
+          <div className="d-flex mt-4 landing-block__item">
+            <div className="landing-block__icon">
               <i className="fa fa-envelope-open-text" />
             </div>
             <a className="email-link" href={`mailto:${email}`}>
               {email}
             </a>
           </div>
-          <div className="d-flex mt-2">
-            <div>
+          <div className="d-flex mt-2 landing-block__item">
+            <div className="landing-block__icon">
               <i className="fa fa-file-arrow-down" />
             </div>
             <a
@@ -46,8 +46,7 @@ const LandingTop = ({
         </div>
       </div>
       <div className="landing-top__foot" onClick={scrollToExperience}>
-        <i className="fa fa-circle-arrow-down" />
-        {/* <ArrowDownCircleFill size={32} color="white" /> */}
+        <i className="fa fa-circle-arrow-down fa-beat" />
       </div>
       <ul className="landing-top__side">
         {social.map(({ name, url }, key) => (

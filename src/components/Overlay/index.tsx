@@ -39,7 +39,7 @@ const Overlay = ({
       className={`nav-overlay ${isOpen ? "d-block" : "d-none"}`}
     >
       <span className="nav-close">
-        {/* <XCircle onClick={handleClose} /> */}
+        <i className="fa fa-xmark" onClick={handleClose} />
       </span>
       <div className="overlay-content">
         <div onClick={scrollExp}>Experience</div>

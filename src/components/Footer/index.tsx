@@ -6,14 +6,12 @@ const Footer = ({ bio }: bioInterface) => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-contact">
-            <div className="footer-contact__email">
+            <div className="footer-contact__item">
               <i className="fa fa-envelope" />
-              {/* <EnvelopeFill className="me-2" size={16} /> */}
               <span>{bio.email}</span>
             </div>
-            <div className="footer-contact__phone">
+            <div className="footer-contact__item">
               <i className="fa fa-phone" />
-              {/* <PhoneFill className="me-2" size={16} /> */}
               <span>{bio.phone}</span>
             </div>
           </div>

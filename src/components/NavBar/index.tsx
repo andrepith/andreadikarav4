@@ -44,7 +44,7 @@ const NavBar = ({
             onClick={handleOpen}
             aria-label="nav-mobile"
           >
-            {/* <List size={24} color="white" /> */}
+            <i className="fa fa-bars-staggered" />
           </button>
           <div className="collapse navbar-collapse" id="navbar">
             <div className="navbar-nav align-items-center ml-auto">
