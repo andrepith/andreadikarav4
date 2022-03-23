@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getBio, updateBio } from "src/store/actions";
-import { htmlDateFormat } from "@/lib/Helpers";
+import { htmlDateFormat } from "src/lib/Helpers";
 
 const initialState = {
   firstName: "",
