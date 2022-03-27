@@ -46,7 +46,7 @@ const LandingTop = ({
         </div>
       </div>
       <div className="landing-top__foot" onClick={scrollToExperience}>
-        <i className="fa fa-circle-arrow-down fa-beat" />
+        <i className="fa fa-circle-arrow-down fa-bounce" />
       </div>
       <ul className="landing-top__side">
         {social.map(({ name, url }, key) => (

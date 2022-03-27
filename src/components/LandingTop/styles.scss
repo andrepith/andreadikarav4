@@ -81,26 +81,6 @@
   }
 }
 
-@keyframes pulse-black {
-  0% {
-    transform: scale(0.98);
-    box-shadow: 0 0 0 0 $color-highlight;
-  }
-
-  50% {
-  }
-
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px $color-highlight;
-  }
-
-  100% {
-    transform: scale(0.98);
-    box-shadow: 0 0 0 0 $color-highlight;
-  }
-}
-
 .landing-title {
   color: $color-white;
   font-size: 3rem;
