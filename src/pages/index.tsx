@@ -10,7 +10,7 @@ const Contact = dynamic(() => import("src/components/Contact"));
 const Footer = dynamic(() => import("src/components/Footer"));
 import bioInterface from "src/lib/Types";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   await dbConnect();
   const res = await Bio.findOne().lean();
   const bio = JSON.parse(JSON.stringify(res));
