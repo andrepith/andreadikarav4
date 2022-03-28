@@ -835,6 +835,13 @@
     hoist-non-react-statics "^3.3.0"
     redux "^4.0.0"
 
+"@types/react-vertical-timeline-component@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@types/react-vertical-timeline-component/-/react-vertical-timeline-component-3.3.2.tgz#61c2ba7a056cb711e836d987ac316f42d95b532a"
+  integrity sha512-RL1kMOg/YxpIO1m7yfX5nG2bC4ngJGSyM5QzQ7J+ozrS0rkxMDwkYMzcYIkwY+JKX8pF2dS1ORlW7FFBT2ggxg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "17.0.41"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.41.tgz#6e179590d276394de1e357b3f89d05d7d3da8b85"

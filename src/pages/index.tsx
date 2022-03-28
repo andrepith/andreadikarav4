@@ -2,10 +2,10 @@ import dynamic from "next/dynamic";
 import NavBar from "src/components/NavBar";
 import LandingTop from "src/components/LandingTop";
 import Experience from "src/components/Experience";
-const Showcase = dynamic(() => import("@/components/Showcase"));
-const Skillset = dynamic(() => import("@/components/Skillset"));
-const Contact = dynamic(() => import("@/components/Contact"));
-const Footer = dynamic(() => import("@/components/Footer"));
+const Showcase = dynamic(() => import("src/components/Showcase"));
+const Skillset = dynamic(() => import("src/components/Skillset"));
+const Contact = dynamic(() => import("src/components/Contact"));
+const Footer = dynamic(() => import("src/components/Footer"));
 import bioInterface from "src/lib/Types";
 
 export async function getServerSideProps({ req }: { req: any }) {

@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Link from "next/link";
 import { IRootState } from "src/store/reducers";
-import withAuth from "@/components/HOC/WithAuth";
-import BioForm from "@/components/BioForm";
-import SocialForm from "@/components/SocialForm";
-import ExperienceForm from "@/components/ExperienceForm";
-import SkillForm from "@/components/SkillForm";
-import PortofolioForm from "@/components/PortofolioForm";
-import EducationForm from "@/components/EducationForm";
+import withAuth from "src/components/HOC/WithAuth";
+import BioForm from "src/components/BioForm";
+import SocialForm from "src/components/SocialForm";
+import ExperienceForm from "src/components/ExperienceForm";
+import SkillForm from "src/components/SkillForm";
+import PortofolioForm from "src/components/PortofolioForm";
+import EducationForm from "src/components/EducationForm";
 import { getBio } from "src/store/actions";
 
 const Dashboard = () => {

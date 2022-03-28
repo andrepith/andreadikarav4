@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import bioInterface from "@/lib/Types";
+import bioInterface from "src/lib/Types";
 
 const Showcase = ({ bio }: bioInterface) => {
   return (

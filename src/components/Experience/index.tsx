@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { getRangeYear } from "src/lib/Helpers";
-import bioInterface from "@/lib/Types";
+import bioInterface from "src/lib/Types";
 
 const Experience = ({ bio }: bioInterface) => {
   return (
