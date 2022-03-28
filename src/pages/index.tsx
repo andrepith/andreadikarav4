@@ -1,4 +1,6 @@
 import dynamic from "next/dynamic";
+import dbConnect from "src/lib/DBConnect";
+import Bio from "src/models/Bio";
 import NavBar from "src/components/NavBar";
 import LandingTop from "src/components/LandingTop";
 import Experience from "src/components/Experience";
@@ -8,11 +10,10 @@ const Contact = dynamic(() => import("src/components/Contact"));
 const Footer = dynamic(() => import("src/components/Footer"));
 import bioInterface from "src/lib/Types";
 
-export async function getServerSideProps({ req }: { req: any }) {
-  const protocol = req.headers["x-forwarded-proto"] || "http";
-  const baseUrl = req ? `${protocol}://${req.headers.host}` : "";
-  const res = await fetch(baseUrl + "/api/bio");
-  const bio = await res.json();
+export async function getServerSideProps() {
+  await dbConnect();
+  const res = await Bio.findOne().lean();
+  const bio = JSON.parse(JSON.stringify(res));
   return {
     props: {
       bio,
