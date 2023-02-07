@@ -17,7 +17,7 @@ const Experience = ({ bio }: bioInterface) => {
               {bio.experience.map((item, index) => (
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
-                  date={getRangeYear(item.from, item.to)}
+                  date={getRangeYear(item.from, item.to, item.current)}
                   iconClassName="timeline-icon"
                   key={index}
                 >
