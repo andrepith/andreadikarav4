@@ -12,7 +12,7 @@ export const loadUser = () => async (dispatch: any) => {
   if (typeof window !== "undefined" && localStorage.token) {
     setAuthToken(localStorage.token);
     try {
-      await axios.get("/api/auth");
+      await axios.get("/api/bio");
       dispatch({ type: USER_LOADED });
     } catch (err) {
       dispatch({

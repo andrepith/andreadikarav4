@@ -1,7 +1,8 @@
 import dbConnect from "src/lib/DBConnect";
+import auth from "src/middleware/auth";
 import Bio from "src/models/Bio";
 
-export default async function handler(req: { method: string }, res: any) {
+const handler = async (req: any, res: any) => {
   const { method } = req;
 
   await dbConnect();
@@ -21,3 +22,5 @@ export default async function handler(req: { method: string }, res: any) {
       break;
   }
 }
+
+export default auth(handler);
