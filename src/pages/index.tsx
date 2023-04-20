@@ -4,10 +4,10 @@ import Bio from "src/models/Bio";
 import NavBar from "src/components/NavBar";
 import LandingTop from "src/components/LandingTop";
 import Experience from "src/components/Experience";
-const Showcase = dynamic(() => import("src/components/Showcase"));
-const Skillset = dynamic(() => import("src/components/Skillset"));
-const Contact = dynamic(() => import("src/components/Contact"));
-const Footer = dynamic(() => import("src/components/Footer"));
+const Showcase = dynamic(import("src/components/Showcase"));
+const Skillset = dynamic(import("src/components/Skillset"));
+const Contact = dynamic(import("src/components/Contact"));
+const Footer = dynamic(import("src/components/Footer"));
 import bioInterface from "src/lib/Types";
 
 export async function getStaticProps() {
